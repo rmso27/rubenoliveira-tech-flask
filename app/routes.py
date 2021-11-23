@@ -7,7 +7,7 @@ from flask import request, render_template
 from app import app
 
 # Import functions
-from .functions import get_date
+from .functions import get_date, get_projects
 
 #######################
 #   ROUTES
@@ -34,5 +34,6 @@ def about():
 def projects():
 
     year = get_date()
+    data = get_projects()
 
-    return render_template('public/projects.html', year = year)
+    return render_template('public/projects.html', year = year, projects = data)
