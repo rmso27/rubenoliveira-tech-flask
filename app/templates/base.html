@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class = "navbar">
+            <div class = "navbar-container">
+                <div class = "navbar-container-links">
+                    <a class = "nav-link" href = "/">HOME</a>
+                    <a class = "nav-link" href = "/about">ABOUT</a>
+                    <a class = "nav-link" href = "/projects">PROJECTS</a>
+                </div>
+            </div>
+        </nav>
+        {% block content %}{% endblock %}
+        <nav class = "footer">
+            <div class = "footer-container">
+                <p>{{ year }} <a href = "/">Ruben Oliveira</a> - All rights reserved.</p>
+            </div>
+        </nav>
+    </body>
+</html>
