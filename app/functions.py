@@ -29,10 +29,11 @@ def get_date():
 # Function to get_projects
 def get_projects():
 
-    data = open(list_of_projects + 'projects.json', 'r', encoding='utf-8')
+    with open(list_of_projects + 'projects.json', encoding='utf-8') as loaded_data:
+        data = json.loads(loaded_data.read())
 
-    for project in range(len(data)):
-        print(['projects'][project]['name'])
+    for project in range(len(data['projects'])):
+        print(data['projects'][project]['name'])
 
     return 0
 

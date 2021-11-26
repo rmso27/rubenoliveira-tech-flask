@@ -3,12 +3,14 @@
         {
             "name": "Project 01",
             "description": "Description 01",
-            "url": "http://"
+            "url": "http://",
+            "git": "http://"
         },
         {
             "name": "Project 02",
             "description": "Description 02",
-            "url": "http://"
+            "url": "http://",
+            "git": "http://"
         }
     ]
 }

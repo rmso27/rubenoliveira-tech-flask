@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
-        <script src = "../static/js/script.js"></script>
-        <title>Document</title>
+        <title>Ruben Oliveira</title>
     </head>
+
     <body>
         <nav class = "navbar">
             <div class = "navbar-container">
-                <div class = "navbar-container-links">
-                    <a id = "home" class = "nav-link" href = "/">HOME</a>
-                    <a id = "about" class = "nav-link" href = "/about">ABOUT</a>
-                    <a id = "projects" class = "nav-link" href = "/projects">PROJECTS</a>
+                <div class = "navbar-logo">
+                    <div class="navbar-logo-img">
+                        RO
+                    </div>
+                </div>
+                <div class = "navbar-links">
+                    <a href = "/">// home</a>
+                    <a href = "/about">// about</a>
+                    <a href = "/projects">// projects</a>
                 </div>
             </div>
         </nav>
+
         {% block content %}{% endblock %}
-        <nav class = "footer">
-            <div class = "footer-container">
-                <p>{{ year }} <a href = "/">Ruben Oliveira</a> - All rights reserved.</p>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>2021 Ruben Oliveira - All rights reserved</p>
             </div>
-        </nav>
+        </footer>
+
     </body>
 </html>
