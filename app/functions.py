@@ -32,9 +32,17 @@ def get_projects():
     with open(list_of_projects + 'projects.json', encoding='utf-8') as loaded_data:
         data = json.loads(loaded_data.read())
 
-    for project in range(len(data['projects'])):
-        print(data['projects'][project]['name'])
+    project_name = []
+    project_description = []
+    project_url = []
+    project_git = []
 
-    return 0
+    for project in range(len(data['projects'])):
+        project_name += [data['projects'][project]['name']]
+        project_description += [data['projects'][project]['description']]
+        project_url = [data['projects'][project]['url']]
+        project_git = [data['projects'][project]['git']]
+
+    return project_name, project_description, project_url, project_git
 
 

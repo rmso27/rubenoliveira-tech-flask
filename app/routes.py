@@ -34,6 +34,6 @@ def about():
 def projects():
 
     year = get_date()
-    data = get_projects()
+    p_name, p_description, p_url, p_git = get_projects()
 
-    return render_template('public/projects.html', year = year, projects = data)
+    return render_template('public/projects.html', year = year, names = p_name, descriptions = p_description, urls = p_url, gits = p_git)
