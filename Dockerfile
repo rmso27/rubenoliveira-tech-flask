@@ -8,7 +8,7 @@ RUN mkdir -p /usr/src/rubenoliveira-tech-flask
 COPY . /usr/src/rubenoliveira-tech-flask
 
 # Start working from the new dir
-WORKDIR /usr/src/rubenoliveira-tech-flas
+WORKDIR /usr/src/rubenoliveira-tech-flask
 
 # Setup dependencies
 RUN apt update
