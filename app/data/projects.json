@@ -1,16 +1,16 @@
+[{
+    "id": 0,
+    "name": "rubenoliveira.tech",
+    "description": "my personal website",
+    "url": "http://rubenoliveira.tech",
+    "git": "https://github.com/rmso27/rubenoliveira-tech-flask",
+    "stack": "HTML5, CSS3, JS, PYTHON (FLASK)"
+},
 {
-    "projects": [
-        {
-            "name": "Project 01",
-            "description": "Description 01",
-            "url": "http://",
-            "git": "http://"
-        },
-        {
-            "name": "Project 02",
-            "description": "Description 02",
-            "url": "http://",
-            "git": "http://"
-        }
-    ]
-}
+    "id": 1,
+    "name": "joliveiraesousa.pt",
+    "description": "local hardware store",
+    "url": "http://joliveiraesousa.pt",
+    "git": "http://",
+    "stack": "HTML5, CSS3, JS, NODEJS"
+}]

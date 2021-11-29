@@ -5,21 +5,16 @@
     <div class="projects">
         <div class="projects-container">
             <h1>my work</h1>
-            {% for name in names %}
-            {% for description in descriptions %}
-            {% for url in urls %}
-            {% for git in gits %}
-            <a href = "{{ url }}">
+            {% for project in projects %}
+            <a href = "{{ project.url }}">
                 <div class = "projects-item">
                     <div class = "projects-item-content">
-                        <h3>{{ name }}</h3>
-                        <p>{{ description }}</p>
+                        <h3>{{ project.name }}</h3>
+                        <p>{{ project.description }}</p>
+                        <p><span class = "project-item-highlights">{{ project.stack }}</span></p>
                     </div>
                 </div>
             </a>
-            {% endfor %}
-            {% endfor %}
-            {% endfor %}
             {% endfor %}
         </div>
     </div>
