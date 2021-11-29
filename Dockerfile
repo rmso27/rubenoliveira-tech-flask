@@ -2,13 +2,13 @@
 FROM python:3.8-buster
 
 # Create app dir
-RUN mkdir -p /usr/src/rubenoliveira-tech
+RUN mkdir -p /usr/src/rubenoliveira-tech-flask
 
 # Copy the app content to the newly created dir
-COPY . /usr/src/rubenoliveira-tech
+COPY . /usr/src/rubenoliveira-tech-flask
 
 # Start working from the new dir
-WORKDIR /usr/src/rubenoliveira-tech
+WORKDIR /usr/src/rubenoliveira-tech-flas
 
 # Setup dependencies
 RUN apt update
