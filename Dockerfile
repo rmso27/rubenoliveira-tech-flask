@@ -18,9 +18,9 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Setup ENV VARS
-export FLASK_APP=app.py
-export FLASK_ENV = production
-flask run
+RUN export FLASK_APP=app.py
+RUN export FLASK_ENV = production
+RUN flask run
 
 # # Start app on boot
 # ENTRYPOINT [ "python3.8", "app.py" ]
