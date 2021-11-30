@@ -17,5 +17,10 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 # App port
 EXPOSE 5000
 
-# Start app on boot
-ENTRYPOINT [ "python3.8", "app.py" ]
+# Setup ENV VARS
+export FLASK_APP=app.py
+export FLASK_ENV = production
+flask run
+
+# # Start app on boot
+# ENTRYPOINT [ "python3.8", "app.py" ]
