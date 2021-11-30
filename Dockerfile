@@ -19,7 +19,7 @@ EXPOSE 5000
 
 # Setup ENV VARS
 RUN export FLASK_APP=app.py
-RUN export FLASK_ENV = production
+RUN export FLASK_ENV=production
 RUN flask run
 
 # # Start app on boot
