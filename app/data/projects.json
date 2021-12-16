@@ -5,12 +5,4 @@
     "url": "http://rubenoliveira.tech",
     "git": "https://github.com/rmso27/rubenoliveira-tech-flask",
     "stack": "HTML5, CSS3, JS, PYTHON (FLASK)"
-},
-{
-    "id": 1,
-    "name": "joliveiraesousa.pt",
-    "description": "local hardware store",
-    "url": "http://joliveiraesousa.pt",
-    "git": "http://",
-    "stack": "HTML5, CSS3, JS, NODEJS"
 }]
